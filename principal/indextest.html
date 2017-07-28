@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en"> 
+<head>
+
+	<meta charset="utf-8">
+	<title>CITEL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+    <script type="text/javascript">
+    	jQuery(function($){
+    		$('.map').append('<div class="overlay">');
+    		$('.map area').mouseover(function(){
+    			var index = $(this).index();
+    			var left = -index * 500-500;
+    			$('.map .overlay').css({
+    				backgroundPosition : left+"px 0px"
+    			}); 
+    		});
+    		$('.map').mouseout(function(){
+    			$('.map .overlay').css({
+    				backgroundPosition : "500px 0px"
+    			});
+    		});
+    	});
+    </script>
+     
+</head>
+<body>
+<div class="wrap-body">
+<header>
+	<div class="wrap-header citel">
+		<div class="row">
+			
+				<div id="encabezado-logo">
+					<img style="width: 80%; margin: 1.3% 1%;" src="images/avatar.png"/>	
+					<p style="float: right; margin-right: 2%; font-size: 75%;">  <a href="index_en.html">English</a> - <a style="color: #FF8000">Español</a></p>
+				</div>
+
+		</div>
+	</div>
+</header>
+ 
+<section id="container">
+	<div class="wrap-container citel">
+		<div id="main-content" class="col-2-3">
+			<div class="wrap-content">
+				<div class="sistema">
+					<div class="row type">
+						<div class="title">
+							<center><p id="title1">Nuestro sistema contiene información general, de mercado, entidades, leyes, reformas e informes de cada uno de los países en el campo de Telecomunicaciones, usted puede acceder a ella haciendo clic sobre el país de su interés.</p></center>
+								</div>
+								<div id="lista1">
+									<ol id="paises" style="list-style-type:square;">
+										<li><a href="../countries/antigua-barbuda.html" target="_blank">Antigua y Barbuda</a></li>
+										<li><a href="../countries/argentina.html" target="_blank">Argentina</a></li>
+										<li><a href="../countries/bahamas.html" target="_blank">Bahamas</a></li>
+										<li><a href="../countries/barbados.html" target="_blank">Barbados</a></li>
+										<li><a href="../countries/belize.html" target="_blank">Belize</a></li>
+										<li><a href="../countries/bolivia.html" target="_blank">Bolivia</a></li>
+										<li><a href="../countries/brasil.html" target="_blank">Brasil</a></li>
+										<li><a href="../countries/canada.html" target="_blank">Canadá</a></li>
+										<li><a href="../countries/chile.html" target="_blank">Chile</a></li>
+										<li><a href="../countries/colombia.html" target="_blank">Colombia</a></li>
+										<li><a href="../countries/costarica.html" target="_blank">Costa Rica</a></li>
+										<li><a href="../countries/cuba.html" target="_blank">Cuba*</a></li>
+										<li><a href="../countries/daminica.html" target="_blank">Dominica</a></li>
+										<li><a href="../countries/ecuador.html" target="_blank">Ecuador</a></li>
+										<li><a href="../countries/elsalvador.html" target="_blank">El Salvador</a></li>
+										<li><a href="../countries/estados-unidos.html" target="_blank">Estados Unidos</a></li>
+										<li><a href="../countries/grenada.html" target="_blank">Granada</a></li>
+										<li><a href="../countries/guatemala.html" target="_blank">Guatemala</a></li>
+										<li><a href="../countries/guyana.html" target="_blank">Guyana</a></li>
+										<li><a href="../countries/haiti.html" target="_blank">Haití</a></li>
+										<li><a href="../countries/honduras.html" target="_blank">Honduras</a></li>
+										<li><a href="../countries/jamaica.html" target="_blank">Jamaica</a></li>
+										<li><a href="../countries/mexico.html" target="_blank"> México </a></li>
+										<li><a href="../countries/nicaragua.html" target="_blank">Nicaragua</a></li>
+										<li><a href="../countries/panama.html" target="_blank">Panamá</a></li>
+										<li><a href="../countries/paraguay.html" target="_blank">Paraguay</a></li>
+										<li><a href="../countries/peru.html" target="_blank">Perú</a></li>
+										<li><a href="../countries/republica-dominicana.html" target="_blank">República Dominicana</a></li>
+										<li><a href="../countries/StKitts&Nevis.html" target="_blank">San Cristóbal y Nieves</a></li>
+										<li><a href="../countries/StVicent.html" target="_blank">San Vicente y las Granadinas</a></li>
+										<li><a href="../countries/stalucia.html" target="_blank">Santa lucía</a></li>
+										<li><a href="../countries/surinam.html" target="_blank">Surinam</a></li>
+										<li><a href="../countries/trinidad-tobago.html" target="_blank">Trinidad y Tobago</a></li>
+										<li><a href="../countries/uruguay.html" target="_blank">Uruguay</a></li>
+										<li><a href="../countries/venezuela.html" target="_blank">Venezuela</a></li>	
+									</ol>
+								</div>
+
+								
+					<div class="map">			
+					<img id="americamap" src="images/america-map10.png" usemap="#Map" alt="america-map" width="500px" height="712px">
+					</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!--Footer-->
+<footer>
+	<div class="citel">
+		<div class="wrap-footer">
+			<div class="row">
+				<p id="notainformativa">
+				*On June 3, 2009, the Ministers of Foreign Affairs of the Americas adopted resolution AG/RES. 2438 (XXXIX-O/09), that resolves that the 1962 resolution, which excluded the Government of Cuba from its participation in the inter-American system, ceases to have effect in the Organization of American States (OAS). The 2009 resolution states that the participation of the Republic of Cuba in the OAS will be the result of a process of dialogue initiated at the request of the Government of Cuba, and in accordance with the practices, purposes, and principles of the OAS.
+				<br><br>
+				SI USTED TIENE INTERÉS EN COMPARTIR INFORMACIÓN QUE PODRÍA REFORZAR NUESTRO PORTAL POR FAVOR COMUNIQUESE CON NOSOTROS POR MEDIO DE CITEL@oas.org</p>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-footer">
+		<div class="wrap-bottom ">
+			<div class="copyright">
+				<p>© Copyright 2017 - Comisión Interamericana de Telecomunicaciones CITEL</p>
+			</div>
+		</div>
+	</div>
+</footer>
+ </div>
+
+</body>
+</html>

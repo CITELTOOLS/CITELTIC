@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en"> 
+<head>
+
+	<meta charset="utf-8">
+	<title>CITEL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+    <script type="text/javascript">
+    	jQuery(function($){
+    		$('.map').append('<div class="overlay">');
+    		$('.map area').mouseover(function(){
+    			var index = $(this).index();
+    			var left = -index * 500-500;
+    			$('.map .overlay').css({
+    				backgroundPosition : left+"px 0px"
+    			}); 
+    		});
+    		$('.map').mouseout(function(){
+    			$('.map .overlay').css({
+    				backgroundPosition : "500px 0px"
+    			});
+    		});
+    	});
+    </script>
+     
+</head>
+<body>
+<div class="wrap-body">
+<header>
+	<div class="wrap-header citel">
+		<div class="row">
+			
+				<div id="encabezado-logo">
+					<img style="width: 80%; margin: 1.3% 1%;" src="images/avatar.png"/>	
+					<p style="float: right; margin-right: 2%; font-size: 75%;">  <a href="index_en.html">English</a> - <a style="color: #FF8000">Español</a></p>
+				</div>
+
+		</div>
+	</div>
+</header>
+ 
+<section id="container">
+	<div class="wrap-container citel">
+		<div id="main-content" class="col-2-3">
+			<div class="wrap-content">
+				<div class="sistema">
+					<div class="row type">
+						<div class="title">
+							<center><p id="title1">Nuestro sistema contiene información general, de mercado, entidades, leyes, reformas e informes de cada uno de los países en el campo de Telecomunicaciones, usted puede acceder a ella haciendo clic sobre el país de su interés.</p></center>
+								</div>
+								<div id="lista1">
+									<ol id="paises" style="list-style-type:square;">
+										<li><a href="../countries/antigua-barbuda.html" target="_blank">Antigua y Barbuda</a></li>
+										<li><a href="../countries/argentina.html" target="_blank">Argentina</a></li>
+										<li><a href="../countries/bahamas.html" target="_blank">Bahamas</a></li>
+										<li><a href="../countries/barbados.html" target="_blank">Barbados</a></li>
+										<li><a href="../countries/belize.html" target="_blank">Belize</a></li>
+										<li><a href="../countries/bolivia.html" target="_blank">Bolivia</a></li>
+										<li><a href="../countries/brasil.html" target="_blank">Brasil</a></li>
+										<li><a href="../countries/canada.html" target="_blank">Canadá</a></li>
+										<li><a href="../countries/chile.html" target="_blank">Chile</a></li>
+										<li><a href="../countries/colombia.html" target="_blank">Colombia</a></li>
+										<li><a href="../countries/costarica.html" target="_blank">Costa Rica</a></li>
+										<li><a> Cuba* </a></li>
+										<li><a href="../countries/dominica.html" target="_blank">Dominica</a></li>
+										<li><a href="../countries/ecuador.html" target="_blank">Ecuador</a></li>
+										<li><a href="../countries/elsalvador.html" target="_blank">El Salvador</a></li>
+										<li><a href="../countries/estados-unidos.html" target="_blank">Estados Unidos</a></li>
+										<li><a href="../countries/grenada.html" target="_blank">Granada</a></li>
+										<li><a href="../countries/guatemala.html" target="_blank">Guatemala</a></li>
+										<li><a href="../countries/guyana.html" target="_blank">Guyana</a></li>
+										<li><a href="../countries/haiti.html" target="_blank">Haití</a></li>
+										<li><a href="../countries/honduras.html" target="_blank">Honduras</a></li>
+										<li><a href="../countries/jamaica.html" target="_blank">Jamaica</a></li>
+										<li><a href="../countries/mexico.html" target="_blank"> México </a></li>
+										<li><a href="../countries/nicaragua.html" target="_blank">Nicaragua</a></li>
+										<li><a href="../countries/panama.html" target="_blank">Panamá</a></li>
+										<li><a href="../countries/paraguay.html" target="_blank">Paraguay</a></li>
+										<li><a href="../countries/peru.html" target="_blank">Perú</a></li>
+										<li><a href="../countries/republica-dominicana.html" target="_blank">República Dominicana</a></li>
+										<li><a href="../countries/StKitts&Nevis.html" target="_blank">San Cristóbal y Nieves</a></li>
+										<li><a href="../countries/StVicent.html" target="_blank">San Vicente y las Granadinas</a></li>
+										<li><a href="../countries/stalucia.html" target="_blank">Santa lucía</a></li>
+										<li><a href="../countries/surinam.html" target="_blank">Surinam</a></li>
+										<li><a href="../countries/trinidad-tobago.html" target="_blank">Trinidad y Tobago</a></li>
+										<li><a href="../countries/uruguay.html" target="_blank">Uruguay</a></li>
+										<li><a href="../countries/venezuela.html" target="_blank">Venezuela</a></li>	
+									</ol>
+								</div>
+
+								
+					<div class="map">			
+					<img id="americamap" src="images/america-map10.png" usemap="#Map" alt="america-map" width="500px" height="712px">
+						<MAP name="MAP">
+							<area shape="poly" coords="149,312,160,316,171,321,179,320,184,318,193,329,198,332,204,330,209,336,215,347,219,348,216,363,216,371,223,380,236,379,244,369,258,368,245,382,237,383,236,390,231,394,225,388,221,391,198,383,191,379,182,372,186,367,177,351,162,332,161,323,154,320,163,337,170,358,167,359,162,352,162,348,153,341,155,334,147,321" href="../countries/mexico.html" target="_blank">
+							
+							<area shape="poly" coords="113,21,124,22,131,37,159,53,112,137,103,133,95,122,88,126,79,133,70,133,71,126,62,139,25,158,12,160,54,129,43,131,36,126,41,115,31,114,37,109,34,102,46,92,62,88,70,76,55,80,48,76,53,66,49,64,59,59,65,57,72,67,78,59,72,53,74,49,71,38,76,34,85,34" alt="Alaska" href="../countries/estados-unidos.html" target="_blank">
+
+							<area shape="poly" coords="347,258,367,257,352,237,336,245,356,227,374,230,386,224,393,218,387,210,374,197,377,192,372,171,357,186,353,176,354,165,346,155,333,153,330,169,323,176,328,191,313,204,312,220,303,222,300,210,304,199,295,197,276,182,269,184,273,171,269,171,272,159,286,143,296,139,315,121,327,120,334,114,335,97,323,105,317,114,315,96,310,102,310,92,306,89,310,84,310,68,298,80,298,88,301,93,295,103,282,98,280,101,267,100,258,92,253,96,249,104,243,92,235,96,226,88,236,85,214,69,207,69,199,59,171,66,157,52,113,135,122,144,130,140,135,168,141,174,132,180,136,199,142,211,149,222,244,229,253,234,283,246,288,253,288,270,284,272,305,265,316,257,331,257,343,245" alt="canada" href="../countries/canada.html" target="_blank">
+							
+							<area shape="poly" coords="145,314,140,304,133,303,133,284,128,279,129,262,139,236,139,224,146,225,149,223,237,230,264,236,285,248,289,264,285,271,304,266,319,257,332,257,341,247,347,248,344,254,348,261,339,261,331,268,330,274,319,280,308,291,304,309,291,316,287,318,282,331,286,350,277,348,274,332,270,330,256,326,251,330,250,334,233,331,222,337,218,348,210,343,206,330,199,328,198,334,190,327,188,319,183,319,178,321,178,321" alt="estadosunidos" href="../countries/estados-unidos.html" target="_blank">
+							
+							<area shape="poly" coords="245,381,248,390,248,394,240,401,234,395,235,391,242,390,238,384" alt="guatemala" href="../countries/guatemala.html" target="_blank">
+							
+							<area shape="poly" coords="251,379,252,387,249,391,246,383" alt="belice" href="../countries/belize.html" target="_blank">
+							
+							<area shape="poly" coords="246,395,249,398,252,398,253,402,247,401,243,401,241,400" alt="ElSalvador" href="../countries/elsalvador.html
+							" target="_blank">
+							
+							<area shape="poly" coords="271,417,277,419,283,416,288,417,292,421,290,422,286,419,280,422,281,425,278,427,276,424,271,422" alt="panama" href="../countries/panama.html" target="_blank">
+							
+							<area shape="poly" coords="250,392,260,391,271,394,264,396,260,399,257,398,254,403,253,399,247,395" alt="honduras" href="../countries/honduras.html" target="_blank">
+							
+							<area shape="poly" coords="267,411,267,406,270,402,269,395,265,397,262,398,254,403,253,404,258,409,259,410,261,409" alt="nicaragua" href="../countries/nicaragua.html" target="_blank">
+							
+							<area shape="poly" coords="267,411,260,410,259,415,262,416,263,414,269,423,271,422,271,416" alt="costarica" href="../countries/costarica.html" target="_blank">
+							
+							<area shape="poly" coords="315,404,308,409,304,409,303,412,300,412,298,417,296,419,292,424,289,427,292,430,292,440,285,448,295,456,297,454,301,456,310,466,313,465,318,465,319,467,317,470,320,473,322,468,323,461,320,456,324,453,321,449,330,448,330,441,329,437,331,432,329,429,325,430,319,427,313,427,311,423,308,417,309,413,316,406" alt="colombia" href="../countries/colombia.html" target="_blank">
+							
+							<area shape="poly" coords="355,417,354,420,360,420,356,425,360,428,355,429,354,431,358,435,351,439,341,439,342,444,347,445,335,454,331,449,329,443,329,438,329,435,331,432,329,430,325,430,319,427,312,427,310,420,308,417,311,411,312,410,314,413,321,410,326,409,329,414,336,412,340,415,347,411,351,416" alt="venezuela" href="../countries/venezuela.html" target="_blank">
+							
+							<area shape="poly" coords="286,449,293,455,296,454,299,456,299,462,294,466,290,468,286,475,285,475,280,472,282,464,279,467,277,465,278,460,281,457,279,452" alt="ecuador" href="../countries/ecuador.html" target="_blank">
+							
+							<area shape="poly" coords="321,529,324,527,324,523,326,520,325,518,326,503,321,499,318,499,318,493,314,495,308,492,305,485,308,481,309,475,319,472,317,470,320,466,314,463,310,465,307,461,304,459,302,456,299,454,300,459,295,466,290,466,285,475,280,471,278,471,277,473,276,477,278,478,276,479,281,484,284,488,290,498,297,508,297,512,305,519 " alt="peru" href="../countries/peru.html" target="_blank">
+							
+							<area shape="poly" coords="360,421,359,428,351,430,360,435,359,438,362,440,359,443,363,451,372,447,372,446,370,440,367,438,372,432,368,427,365,428,364,424" alt="guyana" href="../countries/guyana.html" target="_blank">
+							
+							<area shape="poly" coords="382,431,382,437,383,440,381,446,375,445,376,448,373,448,371,442,366,437,373,431" alt="surinam" href="../countries/surinam.html" target="_blank">
+							
+							<area shape="poly" coords="393,588,407,568,405,559,416,551,422,547,432,544,440,532,440,506,457,489,458,484,453,475,448,473,431,465,424,464,418,469,419,463,408,457,404,459,403,455,398,452,392,439,385,448,377,445,373,448,363,450,358,444,358,435,343,441,348,447,337,452,324,451,322,470,309,477,307,486,317,497,318,491,321,498,338,490,341,501,356,510,362,518,367,521,372,531,369,533,373,546,378,541,387,554,390,562,374,579" alt="brasil" href="../countries/brasil.html" target="_blank">
+							
+							<area shape="poly" coords="384,432,391,435,392,439,385,450,382,446,384,440,381,438,381,434" alt="guyanafrancesa" href="" target="_blank">
+							
+							<area shape="poly" coords="337,494,338,500,344,507,346,505,354,510,359,511,360,519,365,519,369,525,372,530,369,535,363,531,356,533,354,537,354,537,352,545,348,544,348,544,347,543,346,547,343,544,337,544,335,549,333,548,332,543,328,538,330,535,326,530,323,525,326,523,325,518,326,504,321,499,329,498" alt="bolivia" href="../countries/bolivia.html" target="_blank">
+							
+							<area shape="poly" coords="385,552,384,560,381,566,378,569,372,567,368,567,373,558,359,552,353,546,352,543,353,536,357,532,365,532,370,537,371,544,373,545,377,544,381,551" alt="paraguay" href="../countries/paraguay.html" target="_blank"> 
+							
+							<area shape="poly" coords="375,578,380,581,380,583,382,582,388,587,391,590,392,595,389,601,382,601,378,599,375,600,372,598,373,593,372,588,373,582" alt="uruguay" href="../countries/uruguay.html" target="_blank">
+							
+							<area shape="poly" coords="324,525,330,535,327,538,335,551,328,558,332,567,326,573,328,580,325,585,330,597,327,605,329,607,326,611,329,620,326,622,328,637,328,646,331,650,332,670,329,676,331,683,334,683,337,690,348,691,340,697,349,705,332,701,326,693,319,670,323,663,320,661,318,637,320,627,316,614,318,614,321,596,319,584,322,574,321,552,321,531" alt="chile" href="../countries/chile.html" target="_blank">
+							
+							<area shape="poly" coords="385,556,388,565,376,573,373,582,372,598,378,606,380,610,376,618,360,620,361,630,351,629,356,638,353,644,354,651,348,652,346,658,354,663,349,675,347,683,348,690,337,689,334,683,330,683,330,678,333,671,329,640,327,631,327,621,331,594,327,586,331,565,331,557,337,545,347,545,371,560,366,567,377,568" alt="argentina" href="../countries/argentina.html" target="_blank">
+							
+							<area shape="poly" coords="305,372,294,374,293,372,291,371,287,366,283,366,277,365,276,362,266,366,269,360,283,361,296,368" alt="cuba" target="_blank">
+							
+							<area shape="poly" coords="309,374,311,373,315,375,315,380,314,383,306,382,305,380,310,379" alt="haiti" href="../countries/haiti.html" target="_blank">
+							
+							<area shape="poly" coords="328,380,324,376,317,374,316,375,315,384,318,380,320,381,323,380" alt="RepDominicana" href="../countries/republica-dominicana.html" target="_blank">
+							
+							<area shape="poly" coords="290,344,296,343,299,349,308,358,308,367,292,358,292,348" alt="bahamas" href="../countries/bahamas.html" target="_blank">
+							
+							<area shape="poly" coords="289,380,295,379,298,382,301,382,303,385,297,382,294,384,289,383" alt="jamaica" href="../countries/jamaica.html" target="_blank">
+							
+							<area shape="poly" coords="336,379,343,382,343,384,337,381,334,383,331,382,334,380" alt="puertorico" href="../countries/estados-unidos.html" target="_blank">
+							
+							<area shape="poly" coords="347,383,348,381,350,382,350,386,348,386" alt="sancristobal" href="../countries/StKitts&Nevis.html" target="_blank">
+							
+							<area shape="poly" coords="351,382,355,382,355,387,351,387" alt="antiguaybarbuda" href="../countries/antigua-barbuda.html" target="_blank">
+							
+							<area shape="poly" coords="355,387,356,391,353,393,350,390" alt="dominica" href="../countries/dominica.html" target="_blank">
+							
+							<area shape="poly" coords="353,394,356,392,357,397,353,398,352,395" alt="santalucia" href="../countries/stalucia.html" target="_blank">
+							
+							<area shape="poly" coords="348,399,352,399,352,404,348,402 " alt="sanvicente" href="../countries/StVicent.html" target="_blank">
+							
+							<area shape="poly" coords="352,399,353,403,358,403,358,399" alt="barbados" href="../countries/grenada.html" target="_blank">
+							
+							<area shape="poly" coords="356,408,351,408,350,410,352,413,358,412" alt="trinidad-tobago" href="../countries/trinidad-tobago.html" target="_blank">
+
+							<area shape="poly" coords="362,397,354,397,353,402,361,400,361,398" alt="barbados" href="../countries/barbados.html" target="_blank">
+						</MAP>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!--Footer-->
+<footer>
+	<div class="citel">
+		<div class="wrap-footer">
+			<div class="row">
+				<p id="notainformativa">
+				*On June 3, 2009, the Ministers of Foreign Affairs of the Americas adopted resolution AG/RES. 2438 (XXXIX-O/09), that resolves that the 1962 resolution, which excluded the Government of Cuba from its participation in the inter-American system, ceases to have effect in the Organization of American States (OAS). The 2009 resolution states that the participation of the Republic of Cuba in the OAS will be the result of a process of dialogue initiated at the request of the Government of Cuba, and in accordance with the practices, purposes, and principles of the OAS.
+				<br><br>
+				SI USTED TIENE INTERÉS EN COMPARTIR INFORMACIÓN QUE PODRÍA REFORZAR NUESTRO PORTAL POR FAVOR COMUNIQUESE CON NOSOTROS POR MEDIO DE CITEL@oas.org</p>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-footer">
+		<div class="wrap-bottom ">
+			<div class="copyright">
+				<p>© Copyright 2017 - Comisión Interamericana de Telecomunicaciones CITEL</p>
+			</div>
+		</div>
+	</div>
+</footer>
+ </div>
+
+</body>
+</html>
